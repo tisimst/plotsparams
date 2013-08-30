@@ -48,16 +48,16 @@ Examples
 To plot the S2,1 response of a 2-port filter, usage in python might go something 
 like this::
 
-    >>> filename = 'filter.s2p'
-    >>> inport = 0
-    >>> output = 1
-    >>> scale = 'db'
-    >>> title = 'Filter $S_{2 1}$'
-    >>> plotsparams(filename, outport, inport, scale, title)
+    filename = 'filter.s2p'
+    inport = 0
+    output = 1
+    scale = 'db'
+    title = 'Filter $S_{2 1}$'
+    plotsparams(filename, outport, inport, scale, title)
 
 Usage at the command-line might go something like this::
 
-    $ python plotsparams.py -i "filter.s2p" -n 1 -m 0 -s "mag" -t "my cool filter"
+    $ python plotsparams.py -i "filter.s2p" -n 1 -m 0 -s "mag" -t "Filter $S_{2 1}$"
     
 Requires
 --------
