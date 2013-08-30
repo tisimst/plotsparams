@@ -29,7 +29,7 @@ title : str
 
 If using at the command-line, the following syntax is available::
 
-    > plotsparams [OPTIONS]
+    > python plotsparams.py [OPTIONS]
     
     Valid Options:
       -i            Input ".s?p" file name
