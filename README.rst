@@ -45,17 +45,33 @@ intended to be a simple plotter and nothing more (or fancier).
 Examples
 --------
 
-To plot the S2,1 response of a 2-port filter, usage in python might go something 
-like this::
+Basic
++++++
+
+The simplest set of inputs is simply the filename::
+
+    plotsparams('example.s2p')
+    
+or, for the commandline::
+
+    # python plotsparams.py -i 'example.s2p'
+
+This defaults to plotting all responses on the dB scale, with no title.
+
+Advanced
+++++++++
+
+To plot the magnitude response of S2,1 (linear scale) of a 2-port filter, with a
+fancy title, then the usage in python would go something like this::
 
     filename = 'filter.s2p'
     inport = 0
     output = 1
-    scale = 'db'
+    scale = 'mag'
     title = 'Filter $S_{2 1}$'
     plotsparams(filename, outport, inport, scale, title)
 
-Usage at the command-line might go something like this::
+Usage at the command-line would go something like this::
 
     $ python plotsparams.py -i "filter.s2p" -n 1 -m 0 -s "mag" -t "Filter $S_{2 1}$"
     
