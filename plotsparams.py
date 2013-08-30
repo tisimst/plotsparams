@@ -68,6 +68,11 @@ if __name__=='__main__':
         print '  -s, --scale   Plot scale, "db", "mag", "re", "im"'
         print '  -t, --title   Plot title'
         print '  -h, --help    Display this help and exit'
+        print ''
+        print 'Example: to plot S1,1 on a linear scale from a file called "filter.s2p"'
+        print 'with the title "my cool filter", use:\n'
+        print '  $ python plotsparams.py -i "filter.s2p" -n 0 -m 0 -s "mag" -t "my cool filter"'
+
         exit(0)
         
     if len(sys.argv)==1:
