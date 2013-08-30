@@ -6,24 +6,27 @@ A basic S-Parameter plotting utility (with command-line functionality)
 Usage
 -----
 
-This plotter takes a simplified set of inputs (compared to the complete list of possible inputs) and creates a plot using Matplotlib_ from within the scikit-rf_ package.
+This plotter takes a simplified set of inputs (compared to the complete
+list of possible inputs) and creates a plot using `Matplotlib`_ from within
+the `scikit-rf`_ package.
 
-If using this as a python import, then the function has the following construct::
+If using this as a python import, then the function has the following 
+construct::
 
     plotsparams(filename, n, m, scale, title)
 
 where,
 
-filename : str
-    Any valid ``.s?p`` file name.
-n : int (or None)
-    The output port number (zero-based, thus n=0 for S1,?), defaults to all
-m : int (or None)
-    The input port number (zero-based, thus m=0 for S?,1), defaults to all
-scale : str
-    Valid options are "db" (Default), "mag", "re", "im".
-title : str
-    An optional, custom plot title, defaults to None
+    filename : str
+        Any valid ``.s?p`` file name.
+    n : int (or None)
+        The output port number (zero-based, thus n=0 for S1,?), defaults to all
+    m : int (or None)
+        The input port number (zero-based, thus m=0 for S?,1), defaults to all
+    scale : str
+        Valid options are "db" (Default), "mag", "re", "im".
+    title : str
+        An optional, custom plot title, defaults to None
 
 If using at the command-line, the following syntax is available::
 
@@ -57,8 +60,9 @@ Usage at the command-line might go something like this::
 Requires
 --------
 
-- Matplotlib - the de-facto plotting library for python
-- scikit-rf_ - an object-oriented approach to RF/Microwave engineering implemented in the Python programming language.
+- `Matplotlib`_ : the de-facto plotting library for python
+- `scikit-rf`_ : an object-oriented approach to RF/Microwave engineering 
+  implemented in the Python programming language.
 
 Contact
 -------
