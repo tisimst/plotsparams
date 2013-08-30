@@ -16,16 +16,16 @@ construct::
 
 where,
 
-    filename : str
-        Any valid ``.s?p`` file name.
-    n : int (or None)
-        The output port number (zero-based, thus n=0 for S1,?), defaults to all
-    m : int (or None)
-        The input port number (zero-based, thus m=0 for S?,1), defaults to all
-    scale : str
-        Valid options are "db" (Default), "mag", "re", "im".
-    title : str
-        An optional, custom plot title, defaults to None
+filename : str
+    Any valid ``.s?p`` file name.
+n : int (or None)
+    The output port number (zero-based, thus n=0 for S1,?), defaults to all
+m : int (or None)
+    The input port number (zero-based, thus m=0 for S?,1), defaults to all
+scale : str
+    Valid options are "db" (Default), "mag", "re", "im".
+title : str
+    An optional, custom plot title, defaults to None
 
 If using at the command-line, the following syntax is available::
 
