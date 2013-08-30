@@ -54,7 +54,7 @@ The simplest set of inputs is simply the filename::
     
 or, for the commandline::
 
-    # python plotsparams.py -i 'example.s2p'
+    $ python plotsparams.py -i 'example.s2p'
 
 This defaults to plotting all responses on the dB scale, with no title.
 
