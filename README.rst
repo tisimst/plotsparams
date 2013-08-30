@@ -6,9 +6,8 @@ A basic S-Parameter plotting utility (with command-line functionality)
 Usage
 -----
 
-This plotter takes a simplified set of inputs (compared to the complete
-list of possible inputs) and creates a plot using `Matplotlib`_ from within
-the `scikit-rf`_ package.
+This plotter takes a simplified set of inputs and creates a plot using 
+`Matplotlib`_ from within the `scikit-rf`_ package.
 
 If using this as a python import, then the function has the following 
 construct::
@@ -40,6 +39,9 @@ If using at the command-line, the following syntax is available::
       -t, --title   Plot title
       -h, --help    Display this help and exit
 
+For the time being, these are the only options that will be implemented, since it's
+intended to be a simple plotter and nothing more (or fancier).
+
 Examples
 --------
 
@@ -55,7 +57,7 @@ Usage in python might go something like this::
 
 Usage at the command-line might go something like this::
 
-    $ plotsparams -i "filter.s2p" -n 0 -m 0 -s "mag" -t "my cool title"
+    $ python plotsparams.py -i "filter.s2p" -n 0 -m 0 -s "mag" -t "my cool filter"
     
 Requires
 --------
