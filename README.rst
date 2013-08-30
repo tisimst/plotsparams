@@ -50,7 +50,7 @@ Basic
 
 The simplest set of inputs is simply the filename::
 
-    plotsparams('example.s2p')
+    >>> plotsparams('example.s2p')
     
 or, for the commandline::
 
@@ -64,12 +64,12 @@ Advanced
 To plot the magnitude response of S2,1 (linear scale) of a 2-port filter, with a
 fancy title, then the usage in python would go something like this::
 
-    filename = 'filter.s2p'
-    inport = 0
-    output = 1
-    scale = 'mag'
-    title = 'Filter $S_{2 1}$'
-    plotsparams(filename, outport, inport, scale, title)
+    >>> filename = 'filter.s2p'
+    >>> out_port = 1
+    >>> in_port = 0
+    >>> scale = 'mag'
+    >>> title = 'Filter $S_{2 1}$'
+    >>> plotsparams(filename, out_port, in_port, scale, title)
 
 Usage at the command-line would go something like this::
 
